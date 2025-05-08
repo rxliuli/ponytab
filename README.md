@@ -1,6 +1,6 @@
 # PonyTab
 
-A beautiful Chrome extension that replaces your new tab page with stunning My Little Pony artwork by Sam Baneko.
+A beautiful Browser extension that replaces your new tab page with stunning My Little Pony artwork by Sam Baneko.
 
 ## 🌟 Features
 

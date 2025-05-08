@@ -24,6 +24,9 @@ export default defineConfig({
           id: 'ponytab@rxliuli.com',
         },
       }
+      // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/author
+      // @ts-expect-error
+      manifest.author = 'rxliuli'
     }
     return manifest
   },
