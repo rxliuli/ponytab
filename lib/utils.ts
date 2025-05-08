@@ -36,6 +36,7 @@ export async function getWallpaperUrl(): Promise<string> {
   const cache = await caches.open(CACHE_NAME)
   const response = await cache.match(imageUrl)
   if (!response) {
+    updateMetadata(true)
     return '/background.png'
   }
   const blob = await response.blob()
@@ -89,10 +90,10 @@ function selectRandomWallpaper(metadata: any[]): string {
   return 'https://ponytab.rxliuli.com/' + metadata[randomIndex]
 }
 
-export async function updateMetadata() {
+export async function updateMetadata(force: boolean = false) {
   try {
     const needsUpdate = await shouldUpdateMetadata(1000 * 60 * 60 * 24)
-    if (!needsUpdate) return
+    if (!needsUpdate && !force) return
 
     const metadata = await fetchMetadata()
     await storeMetadata(metadata)
