@@ -44,5 +44,5 @@ This project is open source and available under the MIT License.
 
 ## 🌐 Links
 
-- [Chrome Web Store](https://chrome.google.com/webstore) (coming soon)
+- [Chrome Web Store](https://chromewebstore.google.com/detail/ponytab/gcahckghmpoodflilkignobggjmlcaih)
 - [Artist's Website](https://spacecatsamba.com/)
