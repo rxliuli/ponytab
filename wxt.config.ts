@@ -7,7 +7,7 @@ export default defineConfig({
     const manifest: UserManifest = {
       name: 'PonyTab',
       description:
-        'A beautiful Chrome extension that replaces your new tab page with stunning My Little Pony artwork by Sam Baneko.',
+        'A beautiful browser extension that replaces your new tab page with stunning My Little Pony artwork by Sam Baneko.',
       permissions: ['storage', 'alarms'],
       host_permissions: ['https://ponytab.rxliuli.com/*'],
       chrome_url_overrides: {
