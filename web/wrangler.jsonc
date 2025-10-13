@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ponytab",
+  "compatibility_date": "2025-08-03",
+  "main": "./src/worker.ts",
+  "r2_buckets": [
+    {
+      "bucket_name": "ponytab",
+      "binding": "MY_BUCKET",
+      "remote": true
+    }
+  ],
+  "routes": [
+    {
+      "pattern": "ponytab.rxliuli.com",
+      "custom_domain": true
+    }
+  ],
+  "workers_dev": false
+}

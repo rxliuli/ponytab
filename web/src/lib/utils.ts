@@ -1,4 +1,6 @@
-import { storage } from './storage'
+import { LocalStorageAdapter } from './storage/LocalStorageAdapter'
+
+const storage = new LocalStorageAdapter()
 
 const METADATA_API_URL = 'https://ponytab.rxliuli.com/wallpaper.json'
 const STORAGE_KEYS = {
